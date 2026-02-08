@@ -1,0 +1,5 @@
+{
+  "name": "go-plugin-release",
+  "description": "Skill for setting up cross-platform binary compilation and distribution pipelines for Go-based Claude Code plugins.",
+  "version": "0.1.0"
+}

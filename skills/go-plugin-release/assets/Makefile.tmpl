@@ -1,0 +1,16 @@
+BINARY := bin/{{BINARY_NAME}}
+GOFLAGS := -trimpath -ldflags="-s -w"
+
+.PHONY: build test cover clean
+
+build:
+	go build $(GOFLAGS) -o $(BINARY) {{CMD_PATH}}
+
+test:
+	go test -v -race ./...
+
+cover:
+	go test -cover ./...
+
+clean:
+	rm -f $(BINARY)
